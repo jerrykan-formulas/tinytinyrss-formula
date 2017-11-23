@@ -1,0 +1,20 @@
+tinytinyrss:
+  # override default install settings
+  lookup:
+    # install in a custom location (default: /var/www/tinytinyrss)
+    install_dir: /var/www/ttrss
+    # change feed update frequency in minutes (default: 15)
+    update_frequency: 10
+
+  # Tiny Tiny RSS configuration
+  config:
+    # database type to use psql/mysql
+    db_type: pgsql
+    # database name
+    db_name: ttrss
+    # database user
+    db_user: ttrss
+    # database password
+    db_pass: ttrsspassword
+    # full URL of the tinytinyrss installation
+    self_url_path: https://reader.jerrykan.com/

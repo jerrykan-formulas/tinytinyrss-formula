@@ -1,0 +1,4 @@
+base:
+  '*':
+    - tinytinyrss
+    - tinytinyrss.cron

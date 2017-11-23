@@ -1,0 +1,24 @@
+{%- import_yaml "tinytinyrss/defaults.yaml" as defaults -%}
+
+{%- set distro_release = salt['grains.get']('osmajorrelease')|string -%}
+
+{%- set tinytinyrss = salt['grains.filter_by']({
+    'Debian': {
+        'php_modules': {
+            '8': ['php5-curl', 'php5-gd', 'php5-json'],
+            '9': ['php-curl', 'php-gd', 'php-json', 'php-mbstring', 'php-xml'],
+        }[distro_release],
+        'pkg_mysql': {
+            '8': 'php5-mysql',
+            '9': 'php-mysql',
+        }[distro_release],
+        'pkg_postgresql': {
+            '8': 'php5-pgsql',
+            '9': 'php-pgsql',
+        }[distro_release],
+    },
+}, grain='os_family',
+   merge=salt['pillar.get']('tinytinyrss:lookup',
+                            defaults.tinytinyrss,
+                            merge=True)
+) -%}
