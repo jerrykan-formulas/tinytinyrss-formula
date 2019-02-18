@@ -47,10 +47,6 @@ tinytinyrss-dir_perms-{{ name }}:
     - user: {{ tinytinyrss.user }}
     - group: {{ tinytinyrss.user }}
     - mode: 777
-    - recurse:
-      - user
-      - group
-      - mode
     - require:
       - git: tinytinyrss-files
 {% endfor %}
