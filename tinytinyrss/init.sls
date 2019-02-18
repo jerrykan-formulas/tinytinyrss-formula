@@ -51,6 +51,8 @@ tinytinyrss-dir_perms-{{ name }}:
       - user
       - group
       - mode
+    - require:
+      - git: tinytinyrss-files
 {% endfor %}
 
 tinytinyrss-config:
