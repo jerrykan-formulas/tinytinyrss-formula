@@ -25,6 +25,7 @@ tinytinyrss-files:
   git.latest:
     - name: {{ tinytinyrss.repo }}
     - target: {{ tinytinyrss.install_dir }}
+    - rev: {{ tinytinyrss.rev }}
     - depth: {{ tinytinyrss.depth }}
     - force_clone: True
     - require:
