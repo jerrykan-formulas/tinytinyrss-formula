@@ -1,6 +1,6 @@
 tinytinyrss:
-  repo: https://tt-rss.org/fox/tt-rss.git
-  rev: 18.12
+  repo: https://git.tt-rss.org/fox/tt-rss.git
+  rev: 19.2
   depth: 10
   install_dir: /var/www/tinytinyrss
   user: www-data
