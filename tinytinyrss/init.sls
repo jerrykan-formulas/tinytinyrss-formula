@@ -28,6 +28,7 @@ tinytinyrss-files:
     - rev: {{ tinytinyrss.rev }}
     - depth: {{ tinytinyrss.depth }}
     - force_clone: True
+    - force_reset: True
     - require:
       - file: tinytinyrss-dir
       - pkg: tinytinyrss-dependencies
