@@ -5,7 +5,7 @@
 {%- set tinytinyrss = salt['grains.filter_by']({
     'Debian': {
         'php_modules': {
-            '8': ['php5-curl', 'php5-gd', 'php5-json'],
+            '8': ['php5-curl', 'php5-gd', 'php5-intl', 'php5-json'],
             '9': [
                 'php7.0-curl',
                 'php7.0-gd',
