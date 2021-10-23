@@ -24,16 +24,27 @@
                 'php7.3-xml',
                 'php7.3-opcache'
             ],
+            '11': [
+                'php7.4-curl',
+                'php7.4-gd',
+                'php7.4-intl',
+                'php7.4-json',
+                'php7.4-mbstring',
+                'php7.4-xml',
+                'php7.4-opcache'
+            ],
         }[distro_release],
         'pkg_mysql': {
             '8': 'php5-mysql',
             '9': 'php-mysql',
             '10': 'php-mysql',
+            '11': 'php7.4-mysql',
         }[distro_release],
         'pkg_postgresql': {
             '8': 'php5-pgsql',
             '9': 'php-pgsql',
             '10': 'php-pgsql',
+            '11': 'php7.4-pgsql',
         }[distro_release],
     },
 }, grain='os_family',
