@@ -6,9 +6,9 @@ tinytinyrss-dependencies:
   pkg.installed:
     - pkgs:
       - git
-{%- if config['db_type'] == 'pgsql' %}
+{%- if config['TTRSS_DB_TYPE'] == 'pgsql' %}
       - {{ tinytinyrss.pkg_postgresql }}
-{%- elif config['db_type'] == 'mysql' %}
+{%- elif config['TTRSS_DB_TYPE'] == 'mysql' %}
       - {{ tinytinyrss.pkg_mysql }}
 {%- endif %}
 {%- for package in tinytinyrss.php_modules %}

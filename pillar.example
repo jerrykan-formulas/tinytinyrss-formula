@@ -9,12 +9,12 @@ tinytinyrss:
   # Tiny Tiny RSS configuration
   config:
     # database type to use psql/mysql
-    db_type: pgsql
+    TTRSS_DB_TYPE: pgsql
     # database name
-    db_name: ttrss
+    TTRSS_DB_NAME: ttrss
     # database user
-    db_user: ttrss
+    TTRSS_DB_USER: ttrss
     # database password
-    db_pass: ttrsspassword
+    TTRSS_DB_PASS: ttrsspassword
     # full URL of the tinytinyrss installation
-    self_url_path: https://reader.jerrykan.com/
+    TTRSS_SELF_URL_PATH: https://reader.jerrykan.com/
